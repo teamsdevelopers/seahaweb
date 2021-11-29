@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Lalezar&display=swap');
+:root{
+    --green: #yellowgreen
+}
+*{
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+.header{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    left: 0;
+    z-index: 999;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 9%;
+    color: var(--green);
+    
+    /* color: yellowgreen; */
+}
+.navbar .logo {
+    font-family: 'Lalezar', cursive;
+    font-size: 30rem;
+    padding-left: 15px;
+    padding-right: 18px;
+    padding: 25px;
+    color: seagreen;
+
+}
+.navbar .logo span{
+    color: yellowgreen;
+
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 1rem;
+    color: indigo;
+}
+.header .navbar a:hover{
+    color: seagreen;
+}
