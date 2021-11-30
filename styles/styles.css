@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Lalezar&family=Mada:wght@400;500&display=swap');
 :root{
     --green: #yellowgreen
 }
 *{
+    background-image: url(/img/backimage.png);
     font-family: 'Cairo', sans-serif;
     margin: 0;
     padding: 0;
@@ -41,7 +43,7 @@ html{
     font-size: 3rem;
      padding-left: 15px;
     padding-right: 18px;    
-     padding: 25px;
+     padding: 10px;
      padding-top: 30px;
     color: seagreen;
 
@@ -53,21 +55,41 @@ html{
 .header .navbar a{
     font-size: 1.7rem;
     margin: 1rem;
-    color: indigo;
+    color: rgb(255, 255, 255);
+    font-family: 'Mada', sans-serif;
+
 }
 .header .navbar a:hover{
     color: seagreen;
 }
-.slider img{
+/* .slider img{
     position: relative;
     right: 0;
     left: 0;
 
     
-}
+} */
  
 .header #meanu-btn{
     display: none;
+}
+section{
+    margin: 6%;
+}
+img {
+  border-radius: 8%;
+  
+}
+.slider{
+  
+    text-align: center;
+    border-radius: 20px;
+    border: 30px;
+    align-self: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+  
 }
 
 @media(max-width:600px) {
@@ -82,7 +104,7 @@ html{
         font-family: 'Lalezar', cursive;
         font-size: 2rem;
         display: block;
-        padding: 10px;
+        padding: 0px;
     }
     .header .tabbar{
         position: fixed;
@@ -101,7 +123,9 @@ html{
         top: 18%;
         left: 0;
         right: 0;
-        border-top: 1px solid rgb(116, 0, 0) ;
+        border-top: 1px solid rgb(4, 214, 32) ;
+        background-color: chartreuse;
+        
        
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
@@ -112,10 +136,13 @@ html{
         display: block;
         font-size: 1.3rem;
         margin: 1rem;
-        color: indigo;
+        color: rgb(255, 255, 255);
+        font-family: 'Cairo', sans-serif;
+        background-color: chartreuse;
     }
     .header #meanu-btn{
         display: block;
+        color: ivory;
     }
     #meanu-btn{
         cursor: pointer;
