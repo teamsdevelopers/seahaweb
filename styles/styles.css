@@ -92,6 +92,20 @@ img {
   
 }
 
+.component-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    color: wheat;
+    padding: 30px;
+}
+.description{
+    column-count: 2;
+    column-gap: 2.6vw;
+    color: wheat;
+    /* padding: 30px; */
+    padding: 10px;
+}
+
 @media(max-width:600px) {
     html{
         font-size: 50%;  
