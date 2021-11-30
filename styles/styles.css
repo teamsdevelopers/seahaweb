@@ -30,22 +30,23 @@ html{
     z-index: 999;
     align-items: center;
     display: flex;
-    justify-content: space-between;
-    padding: 3rem 9%;
+    justify-content: start;
+    padding: 1rem 9%;
     color: var(--green);
     
     /* color: yellowgreen; */
 }
-.navbar .logo {
+.header .logo {
     font-family: 'Lalezar', cursive;
-    font-size: 30rem;
-    padding-left: 15px;
-    padding-right: 18px;
-    padding: 25px;
+    font-size: 3rem;
+     padding-left: 15px;
+    padding-right: 18px;    
+     padding: 25px;
+     padding-top: 30px;
     color: seagreen;
 
 }
-.navbar .logo span{
+.logo span{
     color: yellowgreen;
 
 }
@@ -56,4 +57,72 @@ html{
 }
 .header .navbar a:hover{
     color: seagreen;
+}
+.slider img{
+    position: relative;
+    right: 0;
+    left: 0;
+
+    
+}
+ 
+.header #meanu-btn{
+    display: none;
+}
+
+@media(max-width:600px) {
+    html{
+        font-size: 50%;  
+    }
+    .header{
+        display: contents;
+        align-items: center;
+    }
+    .header .logo {
+        font-family: 'Lalezar', cursive;
+        font-size: 2rem;
+        display: block;
+        padding: 10px;
+    }
+    .header .tabbar{
+        position: fixed;
+        top: 0; 
+        right: 0;
+        left: 0;
+        z-index: 999;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 9%;
+        color: var(--green);
+    }
+    .header .navbar {
+        position: absolute;
+        top: 18%;
+        left: 0;
+        right: 0;
+        border-top: 1px solid rgb(116, 0, 0) ;
+       
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.action{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .header .navbar a{
+        display: block;
+        font-size: 1.3rem;
+        margin: 1rem;
+        color: indigo;
+    }
+    .header #meanu-btn{
+        display: block;
+    }
+    #meanu-btn{
+        cursor: pointer;
+        font-size: 2.5rem;
+        display: block;
+    }
+    #meanu-btn.fa-times{
+        transform: rotate(180deg);
+    }
 }
